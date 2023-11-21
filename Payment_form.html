@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <h2>Personal Details</h2>
+    <form action="">
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="50" rows="2"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Payment Details</h2>
+        <p>Payment type: 
+            <select name="payment_type" id="payment_type" required>
+                <option value="">--select a payment type--</option>
+                <option value="Esewa">Esewa</option>
+                <option value="imepay">IME Pay</option>
+                <option value="cash_on_delivary">Cash on delivary</option>
+            </select>
+            <p>Account ID: <input type="number" name="account" id="account" required></p>
+            <p>Delivary date(deadline): <input type="date" name="delivarydate" id="delivarydate" required></p>
+        </p>
+        <p>MPIN: <input type="number" name="mpin" id="mpin" required></p>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

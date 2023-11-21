@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!--internal css style sheet-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(24, 70, 56);
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            /*only for navigation bar*/
+            display: flex;
+            /*in a straight line*/
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(27, 106, 81);
+        }
+
+        nav ul {
+            /*only for the whole list*/
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            /*only for each elemnt in the list*/
+            list-style: none;
+            margin: 0 23px;
+            /*separating the elements in the list */
+        }
+
+        main hr {
+            border: 0;
+            background: #409e9e;
+            height: 1px;
+            margin: 40px 75px;
+            /* margin: topbottom leftright;*/
+        }
+
+        nav ul li a {
+
+            text-decoration: none;
+            color: black;
+
+        }
+
+        nav ul li a:hover {
+
+            color: aliceblue;
+            font-size: 1.1rem;
+
+        }
+
+        /*class under the div tag and likewise every class can be accessed in style and costumized accordingly*/
+        .left {
+            /*dot classes are called utility classes */
+            font-size: 1.7rem;
+            font: bolder;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            color: black;
+            font-size: 2.9rem;
+            margin: 80px 0;
+        }
+
+        .rightsection img {
+            width: 450px;
+        }
+
+        .name {
+            color: aqua;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        /*for second section*/
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.8rem;
+        }
+
+        .secondsection .box {
+            background: #74d2d2;
+            width: 80vw;
+            height: 2px;
+            margin: -20px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 60px;
+            width: 1px;
+            background-color: aqua;
+            margin: 0 100px;
+        }
+
+        .textblue {
+            color: rgb(32, 32, 50);
+        }
+
+        .image {
+            width: 250px;
+            position: relative;
+            top: -10px;
+            left: -10px;
+            margin: 25px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 60px;
+            width: 150px;
+        }
+
+        .vertical_desc {
+            color: rgb(24, 24, 58);
+            position: relative;
+            top: 90px;
+            width: 150px;
+            font-size: 11px;
+        }
+
+        footer {
+            background-color: #102e2e;
+            height: 100px;
+            margin-top: 100px;
+            color: rgb(75, 107, 135);
+        }
+
+        .footer {
+            display: flex;
+            padding: 10px 120px;
+            justify-content: space-evenly;
+        }
+
+        .first-footer {
+            font-size: 12px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .githublog {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Katodozi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Now the body starts except the header-->
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi!!</div>
+                It's <span class="name">Katodozi</span>,
+
+                <div>And I'm a Computer Engineer.</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="pngwing.com.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="textblue">What I have learned so far!!
+            </span>
+            <h1>Learning experience!!</h1>
+            <h2><img class="image" src="comp.png" alt=""></h2>
+            <div class="box">
+                <!--these are the vertical lines which reperesents the learning experience-->
+                <div class="vertical">
+
+                    <!--Topics-->
+                    <div class="vertical-text">
+                        Programming in C/C++
+                    </div>
+                    <div class="vertical_desc">
+                        <!--description-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod deleniti ipsa atque
+                        porro similique. A facilis fugiat distinctio aliquam eaque assumenda dolorum nihil sunt?
+                        Molestias vel excepturi ducimus corrupti?
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!--Topics-->
+                    <div class="vertical-text">
+                        Data structure and algorithm in C++
+                    </div>
+                    <div class="vertical_desc">
+                        <!--description-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod deleniti ipsa atque
+                        porro similique. A facilis fugiat distinctio aliquam eaque assumenda dolorum nihil sunt?
+                        Molestias vel excepturi ducimus corrupti?
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!--Topics-->
+                    <div class="vertical-text">
+                        Basics of web development (HTML/CSS/JAVASCRIPT)
+                    </div>
+                    <div class="vertical_desc">
+                        <!--description-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod deleniti ipsa atque
+                        porro similique. A facilis fugiat distinctio aliquam eaque assumenda dolorum nihil sunt?
+                        Molestias vel excepturi ducimus corrupti?
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!--Topics-->
+                    <div class="vertical-text">
+                        Programming in Java
+                    </div>
+                    <div class="vertical_desc">
+                        <!--description-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod deleniti ipsa atque
+                        porro similique. A facilis fugiat distinctio aliquam eaque assumenda dolorum nihil sunt?
+                        Molestias vel excepturi ducimus corrupti?
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!--Topics-->
+                    <div class="vertical-text">
+                        Basics of Software development (Backend)
+                    </div>
+                    <div class="vertical_desc">
+                        <!--description-->
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod deleniti ipsa atque
+                        porro similique. A facilis fugiat distinctio aliquam eaque assumenda dolorum nihil sunt?
+                        Molestias vel excepturi ducimus corrupti?
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                <h1>Katodozi's Portfolio</h1>
+            </div <div class="second-footer">
+            <ul>
+                <li> <a href="github:Katodozi">Github</a> <img class="githublog" src="githublogo.png" alt=""></li>
+                <li>Gmail: <a href="mailto:anuzbhattarai12@gmail.com">anuzbhattarai12@gmail</a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="third-footer"></div>
+        <div class="fourth-footer"></div>
+        </div>
+    </footer>
+    <!--copying code from typed.js for animation of the text-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Backend Developer', 'Java Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
